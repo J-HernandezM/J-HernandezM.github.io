@@ -6,8 +6,8 @@ export default function Header() {
         <ul className="flex gap-16 mx-6">
             <p className="inline-block leading-5 h-full w-28">Juan José Hernández</p>
             <li className="hidden items-center lg:flex"><a href="#">01. Inicio</a></li>
-            <li className="hidden items-center lg:flex"><a href="#">02. Acerca de mí</a></li>
-            <li className="hidden items-center lg:flex"><a href="#">03. Proyectos</a></li>
+            <li className="hidden items-center lg:flex"><a href="#about">02. Acerca de mí</a></li>
+            <li className="hidden items-center lg:flex"><a href="#projects">03. Proyectos</a></li>
         </ul>
         <SwitchDarkMode />
     </nav>
