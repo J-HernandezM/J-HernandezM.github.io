@@ -30,16 +30,6 @@
   }
 }
 
-body {
-  /* color: white */
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-}
-
 .gradient {
   animation: gradientMovement 8s linear infinite;
   background-image: linear-gradient(to left,#ec4899,#0ea5e9,#875df5);

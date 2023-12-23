@@ -9,6 +9,7 @@ module.exports = {
     colors: theme => ({
       ...theme.colors,
       primary: '#5823b8',
+      light: '#c2b6fc',
       pBlack: '#202020',
       pWhite: '#f6f6f6',
     }),

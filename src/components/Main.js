@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -9,6 +10,7 @@ import ProjectCard from './ProjectCard';
 import { projects } from '@/shared/projects';
 import { Slide } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
+import styled from '@emotion/styled';
 
 export default function Main() {
     const containerRef = useRef(null)
@@ -33,10 +35,10 @@ export default function Main() {
                 </div>
                 <div ref={buttonsRef} className="buttons flex gap-4 mt-16 mb-8">
                     <Slide in={slide} direction='right' container={buttonsRef.current} {...(slide ? { timeout: 1000 } : {})}>
-                            <button className="px-2 py-1 font-bold rounded-lg bg-white text-pBlack hover:text-pWhite hover:bg-pBlack">Contáctame</button>
+                            <a href="#contact"><button className="px-2 py-1 font-bold rounded-lg bg-white text-pBlack hover:text-pWhite hover:bg-pBlack">Contáctame</button></a>
                     </Slide>
                     <Slide in={slide} direction='left' container={buttonsRef.current} {...(slide ? { timeout: 1000 } : {})}>
-                        <button className="px-2 py-1 font-bold rounded-lg bg-white text-pBlack hover:text-pWhite hover:bg-pBlack">Hoja de vida</button>
+                        <a href="#"><button className="px-2 py-1 font-bold rounded-lg bg-white text-pBlack hover:text-pWhite hover:bg-pBlack">Hoja de vida</button></a>
                     </Slide>
                 </div>
                 <div ref={socialRef}>
@@ -61,7 +63,7 @@ export default function Main() {
                     <p>Mi experiencia como emprendedor en el campo de la cosmetica artesanal me ha ayudado a potenciar mis habilidades blandas y me permite ofrecer una perspectiva critica en el desarrollo de productos y funcionalidades pensando en la experiencia final del cliente.</p>
                 </div>
                 <h2 className='text-3xl font-bold'>Tecnologias</h2>
-                <div className='grid grid-cols-3 gap-x-6 gap-y-4'>
+                <div className='flex flex-wrap justify-center gap-x-6 gap-y-4 max-w-[740px]'>
                     <img alt="Static Badge HTML" src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
                     <img alt="Static Badge CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
                     <img alt="Static Badge JAVASCRIPT" src="https://img.shields.io/badge/JAVASCRIPT-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
@@ -76,11 +78,20 @@ export default function Main() {
                     <img alt="Static Badge STYLED COMPONENTS" src="https://img.shields.io/badge/STYLED--COMPONENTS-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
                 </div>
             </section>
-            <section id="projects" className='w-4/5 mx-auto flex flex-col items-center gap-2 lg:gap-4 mt-2 lg:mt-4'>
+            <section id="projects" className='w-4/5 mx-auto flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8'>
                 <h2 className="text-3xl font-bold">Proyectos</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                     {projects.map( project => <ProjectCard key={project.title} project={project} />)}
                 </div>
+            </section>
+            <section id="contact" className='mb-20 flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8 w-3/4 mx-auto'>
+                <h2 className="text-3xl font-bold">Contáctame</h2>
+                <p>
+                    Puedes enviarme un mensaje en&nbsp;
+                    <a href='https://www.linkedin.com/in/juan-jose-hernandez-muñoz-9613821a2/' target='_blank' className='font-semibold dark:text-light text-primary cursor-pointer'>LinkedIn</a>
+                    &nbsp;o en&nbsp;
+                    <a href='mailto:juansw03@gmail.com' target='_blank' className='font-semibold dark:text-light text-primary cursor-pointer'>Gmail</a>
+                    &nbsp;y si estás interesado puedes ver mis otros proyectos en <a href='https://github.com/J-HernandezM' target='_blank' className='font-semibold dark:text-light text-primary cursor-pointer'>Github! :)</a></p>
             </section>
         </main>
     )
