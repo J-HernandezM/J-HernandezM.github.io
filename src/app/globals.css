@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
 
   --bg:hsl(204, 43%, 93%);
   --bg1: #FAF4F4;
@@ -18,9 +18,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    /* --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
     --bg1: #1F1F29;
     --bg2: #17171F;
     --bg3: #13131a;
@@ -31,19 +31,23 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* color: white */
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 .gradient {
   animation: gradientMovement 8s linear infinite;
   background-image: linear-gradient(to left,#ec4899,#0ea5e9,#875df5);
   @apply bg-200% bg-clip-text text-transparent
+}
+
+.custom-font {
+  font-family: var(--font-code);
 }
 
 @keyframes gradientMovement {

@@ -20,6 +20,9 @@ module.exports = {
       },
       backgroundSize: {
         '200%': '200% auto',
+      },
+      gridTemplateRows: {
+        'customRow': '40.4px 1fr'
       }
     },
   },
