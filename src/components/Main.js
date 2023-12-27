@@ -17,21 +17,16 @@ export default function Main() {
     const buttonsRef = useRef(null)
     const socialRef = useRef(null)
     const [slide, setSlide] = useState(false)
-    const { t, i18n } = useTranslation()
+    const { t } = useTranslation()
 
     useEffect(()=>{
-        const userLanguage = i18n.currentLocale;
-        console.log(userLanguage)
-        i18n.changeLanguage(userLanguage);
         setSlide(true)
-    }, [i18n])
+    }, [])
 
     return (
         <main className="min-w-[360px]">
             <section id="inicio" className='flex flex-col items-center h-screen justify-center'>
                 <h1>{t('aaa')}</h1>
-                <button onClick={()=>{i18n.changeLanguage('en')}}>ingles</button>
-                <button onClick={()=>{i18n.changeLanguage('es')}}>espanol</button>
                 <div ref={containerRef}>
                     <Slide in={slide} container={containerRef.current} direction='up' {...(slide ? { timeout: 800 } : {})}>
                         <div>
