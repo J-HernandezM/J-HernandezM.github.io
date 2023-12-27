@@ -62,17 +62,17 @@ export default function SwitchDarkMode() {
     if (localStorage.getItem('darkMode') === 'true') {
       localStorage.setItem('darkMode', 'true')
       setDark(true)
-      html.classList.add('dark')
+      document.documentElement.classList.add('dark')
     } else {
       localStorage.setItem('darkMode', 'false')
       setDark(false)
-      html.classList.remove('dark')
+      document.documentElement.classList.remove('dark')
   }
   }, [])
 
   const toggleDarkMode = (e) => {
     setDark(!isDark)
-    html.classList.toggle('dark')
+    document.documentElement.classList.toggle('dark')
     localStorage.setItem('darkMode', `${!isDark}`)
   }
 

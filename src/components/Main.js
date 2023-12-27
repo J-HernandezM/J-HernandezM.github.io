@@ -35,10 +35,10 @@ export default function Main() {
                 </div>
                 <div ref={buttonsRef} className="buttons flex gap-4 mt-16 mb-8">
                     <Slide in={slide} direction='right' container={buttonsRef.current} {...(slide ? { timeout: 1000 } : {})}>
-                            <a href="#contact"><button className="px-2 py-1 font-bold rounded-lg bg-white text-pBlack hover:text-pWhite hover:bg-pBlack">Contáctame</button></a>
+                            <a href="#contact"><button className="action-btns">Contáctame</button></a>
                     </Slide>
                     <Slide in={slide} direction='left' container={buttonsRef.current} {...(slide ? { timeout: 1000 } : {})}>
-                        <a href="#"><button className="px-2 py-1 font-bold rounded-lg bg-white text-pBlack hover:text-pWhite hover:bg-pBlack">Hoja de vida</button></a>
+                        <a href="#"><button className="action-btns">Hoja de vida</button></a>
                     </Slide>
                 </div>
                 <div ref={socialRef}>

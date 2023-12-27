@@ -13,8 +13,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className='scroll-smooth bg-[#0c0c0c] dark:text-pWhite text-pBlack'>
-      <body className={`${sourceCodePro.className} ${sourceCodePro.variable}`}>{children}</body>
+    <html lang="en" className='scroll-smooth'>
+      <body className={`${sourceCodePro.className} ${sourceCodePro.variable} bg-bgWhite dark:bg-bgBlack dark:text-pWhite text-pBlack`}>{children}</body>
     </html>
   )
 }

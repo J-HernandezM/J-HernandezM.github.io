@@ -22,6 +22,10 @@
   --bg6dark: #1a1616;
 }
 
+.action-btns {
+  @apply px-2 py-1 font-bold rounded-lg bg-bgBlack text-pWhite shadow-slate-400 shadow-sm hover:bg-white hover:text-pBlack dark:bg-white dark:text-pBlack dark:shadow-none dark:hover:text-pWhite dark:hover:bg-pBlack
+}
+
 .gradient {
   animation: gradientMovement 8s linear infinite;
   background-image: linear-gradient(to left,#ec4899,#0ea5e9,#875df5);

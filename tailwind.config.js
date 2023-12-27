@@ -5,13 +5,20 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
+    screens: theme => ({
+      ...theme.screens,
+      'md': '874px',
+    }),
     colors: theme => ({
       ...theme.colors,
       primary: '#5823b8',
       light: '#c2b6fc',
       pBlack: '#202020',
       pWhite: '#f6f6f6',
+      bgBlack: '#0c0c0c',
+      bgWhite: '#FAF4F4',
     }),
     extend: {
       backgroundImage: {

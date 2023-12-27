@@ -27,7 +27,7 @@ export default function ProjectCard({project}) {
                 className='z-0 relative'
             />
         </CardActionArea>
-        <CardContent className='bg-[#181818] dark:text-pWhite text-pBlack !p-3 h-full absolute z-10 bottom-0 max-h-14 w-full  group-hover:max-h-44 transition-all duration-500 overflow-hidden '>
+        <CardContent className='bg-bgWhite dark:bg-[#181818] dark:text-pWhite text-pBlack !p-3 h-full absolute z-10 bottom-0 max-h-14 w-full  group-hover:max-h-44 transition-all duration-500 overflow-hidden '>
             <Typography 
                 gutterBottom
                 variant="h3" 
