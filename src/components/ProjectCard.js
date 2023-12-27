@@ -32,7 +32,7 @@ export default function ProjectCard({project}) {
                 gutterBottom
                 variant="h3" 
                 component="div" 
-                className='text-2xl custom-font font-semibold'
+                className='!text-2xl custom-font !font-semibold'
             >
                 {project.title}
             </Typography>
@@ -49,7 +49,7 @@ export default function ProjectCard({project}) {
                             <OpenInNewIcon className='cursor-pointer' />
                         </a>
                     </div>
-                    <div className='flex gap-1 lg:gap-2 items-center'>
+                    <div className='flex gap-2 items-center'>
                         {project.technologies.map( tech => <Image width={tech==='javascript'?30:24} height={tech==='javascript'?30:24} src={badges[tech]} key={tech} alt={`${tech} badge`}/>)}
                     </div>
                 </div>

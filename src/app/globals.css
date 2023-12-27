@@ -14,20 +14,12 @@
   --bg4: #f5f5fa;
   --bg5: #f0f0f5;
   --bg6: #f2f2f8;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0; */
-    --bg1: #1F1F29;
-    --bg2: #17171F;
-    --bg3: #13131a;
-    --bg4: #292727;
-    --bg5: #1f1c1c;
-    --bg6: #1a1616;
-  }
+  --bg1dark: #1F1F29;
+  --bg2dark: #17171F;
+  --bg3dark: #13131a;
+  --bg4dark: #292727;
+  --bg5dark: #1f1c1c;
+  --bg6dark: #1a1616;
 }
 
 .gradient {
@@ -37,7 +29,7 @@
 }
 
 .custom-font {
-  font-family: var(--font-code);
+  font-family: var(--font-code) !important;
 }
 
 @keyframes gradientMovement {
