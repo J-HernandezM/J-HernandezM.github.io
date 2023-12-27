@@ -1,6 +1,8 @@
+'use client'
+
 import Header from '@/components/Header'
 import Main from '@/components/Main'
-import Image from 'next/image'
+import './i18n'
 
 export default function Home() {
   return (
@@ -10,3 +12,4 @@ export default function Home() {
     </>
   )
 }
+
