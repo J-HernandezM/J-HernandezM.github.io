@@ -53,26 +53,33 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-const html = document.querySelector('html')
-
 export default function SwitchDarkMode() {
-  const [isDark, setDark] = useState(localStorage.getItem('darkMode') === 'true')
+  const isLocalStorageAvailable = typeof window !== 'undefined' && window.localStorage;
+  const [isDark, setDark] = useState(false)
 
   useEffect( () => {
-    if (localStorage.getItem('darkMode') === 'true') {
-      localStorage.setItem('darkMode', 'true')
-      setDark(true)
-      document.documentElement.classList.add('dark')
+    const html = document.querySelector('html')
+
+    if (isLocalStorageAvailable) {
+      if (localStorage.getItem('darkMode') === 'true') {
+        localStorage.setItem('darkMode', 'true')
+        setDark(true)
+        html.classList.add('dark')
+      } else {
+        localStorage.setItem('darkMode', 'false')
+        setDark(false)
+        html.classList.remove('dark')
+      }
     } else {
-      localStorage.setItem('darkMode', 'false')
-      setDark(false)
-      document.documentElement.classList.remove('dark')
-  }
-  }, [])
+      return
+    }
+  }, [isLocalStorageAvailable])
 
   const toggleDarkMode = (e) => {
+    const html = document.querySelector('html')
+
     setDark(!isDark)
-    document.documentElement.classList.toggle('dark')
+    html.classList.toggle('dark')
     localStorage.setItem('darkMode', `${!isDark}`)
   }
 
