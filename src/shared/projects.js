@@ -1,7 +1,7 @@
 export const projects = [
     {
         title:'Ananda E-commerce',
-        description:'E-commerce en construccion para mi propia empresa de cosmetica artesanal. Diseño limpio, elegante y acorde a la imagen de marca.',
+        description:'cards.ananda',
         image:'projects/ananda.png',
         repo:'https://github.com/J-HernandezM/ananda-ecommerce',
         live: 'https://ananda-ecommerce.vercel.app',
@@ -9,7 +9,7 @@ export const projects = [
     },
     {
         title:'Weather Wizard',
-        description:'Aplicativo para consultar el clima en diferentes localizaciones a la vez.',
+        description:'cards.weather',
         image:'projects/weather-app.png',
         repo:'https://github.com/J-HernandezM/weather-app',
         live:'https://j-hernandezm.github.io/weather-app/',
@@ -17,7 +17,7 @@ export const projects = [
     },
     {
         title:'Travel Landing Page',
-        description:'Landing Page para empresa de viajes y paquetes turisticos, con un diseño moderno y llamativo. ',
+        description:'cards.landing',
         image:'projects/tailwind.png',
         repo:'https://github.com/J-HernandezM/tailwind-course',
         live:'https://j-hernandezm.github.io/tailwind-course/public',
@@ -25,7 +25,7 @@ export const projects = [
     },
     {
         title:'To-do List',
-        description:'To-do manager con diseño simple, y features como routing, estados de carga y manejo del estado usando reducers.',
+        description:'cards.todo',
         image:'projects/to-do.png',
         repo:'https://github.com/J-HernandezM/to-do-list',
         live:'https://j-hernandezm.github.io/to-do-list/',
@@ -33,7 +33,7 @@ export const projects = [
     },
     {
         title:'Tip splitter',
-        description:'Sencilla pero estetica herramienta para divir la cuenta de un restaurante o compra entre tus amigos.',
+        description:'cards.tip',
         image:'projects/tip-splitter.png',
         repo:'https://github.com/J-HernandezM/tip-splitter',
         live:'https://j-hernandezm.github.io/tip-splitter/',
@@ -41,7 +41,7 @@ export const projects = [
     },
     {
         title:'IP Adress Tracker',
-        description:'Aplicativo sencillo para localizar una direccion IP y brindar informacion de su localización.',
+        description:'cards.ip',
         image:'projects/ip-adress.png',
         repo:'https://github.com/J-HernandezM/ip-address-tracker',
         live:'https://j-hernandezm.github.io/ip-address-tracker/',

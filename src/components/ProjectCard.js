@@ -8,8 +8,10 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { badges } from '@/shared/badges';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectCard({project}) {
+    const { t } = useTranslation()
 
     const openInNewTab = (url) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -38,7 +40,7 @@ export default function ProjectCard({project}) {
             </Typography>
             <article className='flex flex-col justify-between h-3/4'>
                 <Typography variant="body2" className='custom-font'>
-                    {project.description}
+                    {t(project.description)}
                 </Typography>
                 <div className='flex items-center justify-between justify-self-end '>
                     <div className='flex gap-1 lg:gap-2 items-center'>

@@ -26,7 +26,6 @@ export default function Main() {
     return (
         <main className="min-w-[360px]">
             <section id="inicio" className='flex flex-col items-center h-screen justify-center'>
-                <h1>{t('aaa')}</h1>
                 <div ref={containerRef}>
                     <Slide in={slide} container={containerRef.current} direction='up' {...(slide ? { timeout: 800 } : {})}>
                         <div>
@@ -37,10 +36,10 @@ export default function Main() {
                 </div>
                 <div ref={buttonsRef} className="buttons flex gap-4 mt-16 mb-8">
                     <Slide in={slide} direction='right' container={buttonsRef.current} {...(slide ? { timeout: 1000 } : {})}>
-                            <a href="#contact"><button className="action-btns">Contáctame</button></a>
+                            <a href="#contact"><button className="action-btns">{t('contact')}</button></a>
                     </Slide>
                     <Slide in={slide} direction='left' container={buttonsRef.current} {...(slide ? { timeout: 1000 } : {})}>
-                        <a href="#"><button className="action-btns">Hoja de vida</button></a>
+                        <a href="#"><button className="action-btns">{t('cv')}</button></a>
                     </Slide>
                 </div>
                 <div ref={socialRef}>
@@ -57,14 +56,14 @@ export default function Main() {
                 <div className='w-8/12 md:w-1/2 lg:w-4/12 aspect-square relative'>
                     <Image src={profilePic} fill className='rounded-full' alt="profile picture of Juan Jose Hernandez"></Image>
                 </div>
-                <h2 className='text-3xl font-bold'>Acerca de mí</h2>
+                <h2 className='text-3xl font-bold'>{t('about')}</h2>
                 <div className="lg:w-2/3">
-                    <p className='mb-2 lg:mb-4'>Hola! Soy Juan José Hernández, Frontend Developer con +1 año de experiencia creando soluciones eficientes e innovadoras.</p>
-                    <p className='mb-2 lg:mb-4'>Poseo sólidos conocimientos en HTML, CSS, y JavaScript, asi como React y NodeJS.</p>
-                    <p className="mb-2 lg:mb-4">Durante el ultimo año he tenido la oportunidad de explorar otros frameworks y familizarizarme más con los mismos.</p>
-                    <p>Mi experiencia como emprendedor en el campo de la cosmetica artesanal me ha ayudado a potenciar mis habilidades blandas y me permite ofrecer una perspectiva critica en el desarrollo de productos y funcionalidades pensando en la experiencia final del cliente.</p>
+                    <p className='mb-2 lg:mb-4'>{t('description.1')}</p>
+                    <p className='mb-2 lg:mb-4'>{t('description.2')}</p>
+                    <p className="mb-2 lg:mb-4">{t('description.3')}</p>
+                    <p>{t('description.4')}</p>
                 </div>
-                <h2 className='text-3xl font-bold'>Tecnologias</h2>
+                <h2 className='text-3xl font-bold'>{t('tech')}</h2>
                 <div className='flex flex-wrap justify-center gap-x-6 gap-y-4 max-w-[740px]'>
                     <img alt="Static Badge HTML" src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
                     <img alt="Static Badge CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
@@ -81,19 +80,20 @@ export default function Main() {
                 </div>
             </section>
             <section id="projects" className='w-4/5 mx-auto flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8'>
-                <h2 className="text-3xl font-bold">Proyectos</h2>
+                <h2 className="text-3xl font-bold">{t('projects')}</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                     {projects.map( project => <ProjectCard key={project.title} project={project} />)}
                 </div>
             </section>
             <section id="contact" className='mb-20 flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8 w-3/4 mx-auto'>
-                <h2 className="text-3xl font-bold">Contáctame</h2>
+                <h2 className="text-3xl font-bold">{t('contact')}</h2>
                 <p>
-                    Puedes enviarme un mensaje en&nbsp;
+                    {t('footer.1')}
                     <a href='https://www.linkedin.com/in/juan-jose-hernandez-muñoz-9613821a2/' target='_blank' className='font-semibold dark:text-light text-primary cursor-pointer'>LinkedIn</a>
-                    &nbsp;o en&nbsp;
-                    <a href='mailto:juansw03@gmail.com' target='_blank' className='font-semibold dark:text-light text-primary cursor-pointer'>Gmail</a>
-                    &nbsp;y si estás interesado puedes ver mis otros proyectos en <a href='https://github.com/J-HernandezM' target='_blank' className='font-semibold dark:text-light text-primary cursor-pointer'>Github! :)</a></p>
+                    {t('footer.2')}
+                    <a href='mailto:juansw03@gmail.com' target='_blank' className='font-semibold dark:text-light text-primary cursor-pointer'>Gmail,</a>
+                    {t('footer.3')}
+                    <a href='https://github.com/J-HernandezM' target='_blank' className='font-semibold dark:text-light text-primary cursor-pointer'>Github! :)</a></p>
             </section>
         </main>
     )
