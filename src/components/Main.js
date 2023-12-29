@@ -17,7 +17,8 @@ export default function Main() {
     const buttonsRef = useRef(null)
     const socialRef = useRef(null)
     const [slide, setSlide] = useState(false)
-    const { t } = useTranslation()
+    const { t, i18n} = useTranslation()
+    console.log(i18n.language)
 
     useEffect(()=>{
         setSlide(true)
@@ -39,7 +40,7 @@ export default function Main() {
                             <a href="#contact"><button className="action-btns">{t('contact')}</button></a>
                     </Slide>
                     <Slide in={slide} direction='left' container={buttonsRef.current} {...(slide ? { timeout: 1000 } : {})}>
-                        <a href="#"><button className="action-btns">{t('cv')}</button></a>
+                        <a target='_blank' href={i18n.language === 'es' ? 'https://drive.google.com/file/d/1rh595_SXvZgBsoaW1iR9ho6gUl-lYclc/view?usp=drive_link' : 'https://drive.google.com/file/d/1In4CRIfnMv504p4XGhJT_iUj8DrOPWxo/view?usp=drive_link'}><button className="action-btns">{t('cv')}</button></a>
                     </Slide>
                 </div>
                 <div ref={socialRef}>
