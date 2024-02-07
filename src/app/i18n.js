@@ -30,7 +30,9 @@ i18next.use(initReactI18next).use(I18nextBrowserLanguageDetector).init({
                     landing: 'Landing Page for a travel and tour packages company, featuring a modern and eye-catching design.',
                     todo: 'To-do manager with a simple design and features such as routing, loading states, and state management using reducers.',
                     tip: 'Simple yet aesthetically pleasing tool for splitting the bill at a restaurant or dividing expenses among friends.',
-                    ip: 'Simple app for locating an IP address and providing information about its location.'
+                    ip: 'Simple app for locating an IP address and providing information about its location.',
+                    short: 'Landing page to shorten links using an API'
+
                 }
             }
         },
@@ -59,7 +61,8 @@ i18next.use(initReactI18next).use(I18nextBrowserLanguageDetector).init({
                     landing: 'Landing Page para empresa de viajes y paquetes turisticos, con un diseño moderno y llamativo.',
                     todo: 'To-do manager con diseño simple, y features como routing, estados de carga y manejo del estado usando reducers.',
                     tip: 'Sencilla pero estetica herramienta para divir la cuenta de un restaurante o compra entre tus amigos.',
-                    ip: 'Aplicativo sencillo para localizar una direccion IP y brindar informacion de su localización.'
+                    ip: 'Aplicativo sencillo para localizar una direccion IP y brindar informacion de su localización.',
+                    short: 'Landing page para acortar links mediante una API.'
                 }
             }
         }

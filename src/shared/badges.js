@@ -1,5 +1,7 @@
 export const badges = {
     javascript: 'logos/javascript.svg',
+    typescript: 'logos/typescript.svg',
+    jest: 'logos/jest.svg',
     react: 'logos/react.svg',
     css: 'logos/css3.svg',
     next: 'logos/nextdotjs.svg',
