@@ -7,7 +7,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255; */
 
-  --bg:hsl(204, 43%, 93%);
+  --bg: hsl(204, 43%, 93%);
   --bg1: #FAF4F4;
   --bg2: #f5f0f0;
   --bg3: #f9f4f4;
@@ -28,7 +28,7 @@
 
 .gradient {
   animation: gradientMovement 8s linear infinite;
-  background-image: linear-gradient(to left,#ec4899,#0ea5e9,#875df5);
+  background-image: linear-gradient(to left, #ec4899, #0ea5e9, #875df5);
   @apply bg-200% bg-clip-text text-transparent
 }
 
@@ -36,13 +36,22 @@
   font-family: var(--font-code) !important;
 }
 
+.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @keyframes gradientMovement {
   0% {
     background-position: 100% 50%;
   }
+
   50% {
     background-position: 0 50%;
   }
+
   100% {
     background-position: 100% 50%;
   }
