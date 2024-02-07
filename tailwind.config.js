@@ -10,6 +10,7 @@ module.exports = {
     screens: theme => ({
       ...theme.screens,
       'md': '874px',
+      'lg': '1024px'
     }),
     colors: theme => ({
       ...theme.colors,
