@@ -37,6 +37,18 @@ i18next
             ip: 'Simple app for locating an IP address and providing information about its location.',
             short: 'Landing page to shorten links using an API',
           },
+          work: {
+            position: 'Frontend Developer',
+            time: '2023 - Present [Lulosaurio]',
+            achievements: {
+              title: 'ACHIEVEMENTS',
+              1: 'I actively collaborated in the design and refactoring of the project architecture',
+              2: 'I developed a registration landing page for affiliates, notifying users of promotional codes using automation tools like n8n, and automatically deployed thanks to a pipeline created with GitHub Actions',
+              3: 'I was responsible for implementing new features, such as a new music section, content player and  creation and management of playlists.',
+              4: 'I  provided support solving multiple bugs that affected the user experience.',
+              5: 'Thanks to my contributions, our team was able to reduce the app size in 70%',
+            },
+          },
         },
       },
       es: {
@@ -67,6 +79,18 @@ i18next
             tip: 'Sencilla pero estetica herramienta para divir la cuenta de un restaurante o compra entre tus amigos.',
             ip: 'Aplicativo sencillo para localizar una direccion IP y brindar informacion de su localización.',
             short: 'Landing page para acortar links mediante una API.',
+          },
+          work: {
+            position: 'Desarrollador Frontend',
+            time: '2023 - Actualidad [Lulosaurio]',
+            achievements: {
+              title: 'LOGROS OBTENIDOS',
+              1: 'Colaboré activamente en el diseño y la refactorización de la arquitectura del proyecto.',
+              2: 'Desarrollé una landing page de registro para afiliados, notificando al usuario códigos promocionales mediante herramientas de automatización como n8n, y desplegada automáticamente gracias a un pipeline creado con GitHub Actions.',
+              3: 'Estuve a cargo de implementar nuevas funcionalidades, como una nueva seccion para música, reproductor de contenidos y la creacion y gestion de playlists.',
+              4: 'Brindé soporte resolviendo múltiples bugs que afectaban la experiencia del usuario.',
+              5: 'Gracias a mis colaboraciones pudimos como equipo reducir el tamaño de la app en un 70%.',
+            },
           },
         },
       },

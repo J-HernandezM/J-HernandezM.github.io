@@ -11,6 +11,7 @@ import { projects } from '@/shared/projects';
 import { Slide } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import ExperienceSlider from './ExperienceSlider';
 
 export default function Main() {
   const containerRef = useRef(null);
@@ -18,7 +19,6 @@ export default function Main() {
   const socialRef = useRef(null);
   const [slide, setSlide] = useState(false);
   const { t, i18n } = useTranslation();
-  console.log(i18n.language);
 
   useEffect(() => {
     setSlide(true);
@@ -92,6 +92,24 @@ export default function Main() {
           <img alt="Static Badge MATERIALUI" src="https://img.shields.io/badge/MUI-0081CB?style=for-the-badge&logo=MUI&logoColor=white" />
           <img alt="Static Badge SASS" src="https://img.shields.io/badge/SASS-hotpink?style=for-the-badge&logo=SASS&logoColor=white" />
           <img alt="Static Badge STYLED COMPONENTS" src="https://img.shields.io/badge/STYLED--COMPONENTS-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
+        </div>
+      </section>
+      <section id="experience" className="w-11/12 mx-auto flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8">
+        <h2 className="text-3xl font-bold">{t('experience')}</h2>
+        <div className="w-full flex flex-col gap-8 items-center lg:flex-row lg:gap-14 lg:items-start lg:max-w-[1140px]">
+          <ExperienceSlider></ExperienceSlider>
+          <div className="w-11/12 md:w-2/3">
+            <h3 className="text-xl font-bold">{t('work.position')}</h3>
+            <p>{t('work.time')}</p>
+            <p className="font-bold mt-4 mb-1">{t('work.achievements.title')}</p>
+            <ul className="list-disc list-inside">
+              <li className="text-pretty mb-2">{t('work.achievements.1')}</li>
+              <li className="text-pretty mb-2">{t('work.achievements.2')}</li>
+              <li className="text-pretty mb-2">{t('work.achievements.3')}</li>
+              <li className="text-pretty mb-2">{t('work.achievements.4')}</li>
+              <li className="text-pretty mb-2">{t('work.achievements.5')}</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="projects" className="w-11/12 mx-auto flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8">
