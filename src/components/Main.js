@@ -104,10 +104,16 @@ export default function Main() {
             <p className="font-bold mt-4 mb-1">{t('work.achievements.title')}</p>
             <ul className="list-disc list-inside">
               <li className="text-pretty mb-2">{t('work.achievements.1')}</li>
-              <li className="text-pretty mb-2">{t('work.achievements.2')}</li>
-              <li className="text-pretty mb-2">{t('work.achievements.3')}</li>
+              <li className="text-pretty mb-2">
+                <span>{t('work.achievements.2')}</span>
+                <a href="https://affiliates.lulosaurio.com" target="_blank" className="underline decoration-solid">
+                  landing page
+                </a>
+                <span>{t('work.achievements.3')}</span>
+              </li>
               <li className="text-pretty mb-2">{t('work.achievements.4')}</li>
               <li className="text-pretty mb-2">{t('work.achievements.5')}</li>
+              <li className="text-pretty mb-2">{t('work.achievements.6')}</li>
             </ul>
           </div>
         </div>
