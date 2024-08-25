@@ -8,5 +8,6 @@ export const badges = {
     vite: 'logos/vite.svg',
     tailwind: 'logos/tailwindcss.svg',
     mui: 'logos/mui.svg',
-    styled: 'logos/styledcomponents.svg'
+    styled: 'logos/styledcomponents.svg',
+    sass: 'logos/sass.svg'
 }

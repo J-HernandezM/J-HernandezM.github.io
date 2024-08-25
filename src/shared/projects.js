@@ -3,9 +3,9 @@ export const projects = [
         title: 'Ananda E-commerce',
         description: 'cards.ananda',
         image: 'projects/ananda.png',
-        repo: 'https://github.com/J-HernandezM/ananda-ecommerce',
-        live: 'https://ananda-ecommerce.vercel.app',
-        technologies: ['react', 'next', 'mui', 'styled', 'typescript', 'jest']
+        repo: 'https://github.com/J-HernandezM/ananda-web',
+        live: 'https://anandajaboneria-web.vercel.app',
+        technologies: ['react', 'next', 'mui', 'sass', 'typescript', 'jest']
     },
     {
         title: 'Weather Wizard',
