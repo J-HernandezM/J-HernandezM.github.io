@@ -18,7 +18,7 @@ i18next
           cv: 'Curriculum',
           tech: 'Tech stack',
           description: {
-            1: "Hello! I'm Juan José Hernández, a Frontend Developer with over one year of experience creating efficient and innovative solutions.",
+            1: "Hello! I'm Juan José Hernández, a Frontend Developer with over two years of experience creating efficient and innovative solutions.",
             2: 'I have strong knowledge in HTML, CSS, and JavaScript, as well as React and NodeJS.',
             3: "Over the past year, I've had the opportunity to explore other frameworks and become more familiar with them.",
             4: 'My experience as an entrepreneur in the field of handmade cosmetics has helped me enhance my soft skills and enables me to offer a critical perspective in the development of products and features, always keeping the customer experience in mind.',
@@ -62,7 +62,7 @@ i18next
           cv: 'Hoja de vida',
           tech: 'Tecnologías',
           description: {
-            1: 'Hola! Soy Juan José Hernández, Frontend Developer con +1 año de experiencia creando soluciones eficientes e innovadoras.',
+            1: 'Hola! Soy Juan José Hernández, Frontend Developer con +2 años de experiencia creando soluciones eficientes e innovadoras.',
             2: 'Poseo sólidos conocimientos en HTML, CSS, y JavaScript, asi como React y NodeJS.',
             3: 'Durante el ultimo año he tenido la oportunidad de explorar otros frameworks y familizarizarme más con los mismos.',
             4: 'Mi experiencia como emprendedor en el campo de la cosmetica artesanal me ha ayudado a potenciar mis habilidades blandas y me permite ofrecer una perspectiva critica en el desarrollo de productos y funcionalidades pensando en la experiencia final del cliente.',
