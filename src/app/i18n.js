@@ -39,7 +39,7 @@ i18next
           },
           work: {
             position: 'Frontend Developer',
-            time: '2023 - Present [Lulosaurio]',
+            time: '2022 - Present [Lulosaurio]',
             achievements: {
               title: 'ACHIEVEMENTS',
               1: 'I actively collaborated in the design and refactoring of the project architecture',
@@ -83,7 +83,7 @@ i18next
           },
           work: {
             position: 'Desarrollador Frontend',
-            time: '2023 - Actualidad [Lulosaurio]',
+            time: '2022 - Actualidad [Lulosaurio]',
             achievements: {
               title: 'LOGROS OBTENIDOS',
               1: 'Colaboré activamente en el diseño y la refactorización de la arquitectura del proyecto',
