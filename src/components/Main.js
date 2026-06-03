@@ -95,6 +95,22 @@ export default function Main() {
       </section>
       <section id="experience" className="w-11/12 mx-auto flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8">
         <h2 className="text-3xl font-bold">{t('experience')}</h2>
+        <div className="w-full flex flex-col items-center lg:max-w-[1140px]">
+          <div className="w-11/12 md:w-2/3">
+            <h3 className="text-xl font-bold">{t('work2.position')}</h3>
+            <p>{t('work2.time')}</p>
+            <p className="font-bold mt-4 mb-1">{t('work2.achievements.title')}</p>
+            <ul className="list-disc list-inside">
+              <li className="text-pretty mb-2">{t('work2.achievements.1')}</li>
+              <li className="text-pretty mb-2">{t('work2.achievements.2')}</li>
+              <li className="text-pretty mb-2">{t('work2.achievements.3')}</li>
+              <li className="text-pretty mb-2">{t('work2.achievements.4')}</li>
+              <li className="text-pretty mb-2">{t('work2.achievements.5')}</li>
+              <li className="text-pretty mb-2">{t('work2.achievements.6')}</li>
+              <li className="text-pretty mb-2">{t('work2.achievements.7')}</li>
+            </ul>
+          </div>
+        </div>
         <div className="w-full flex flex-col gap-8 items-center lg:flex-row lg:gap-14 lg:items-start lg:max-w-[1140px]">
           <ExperienceSlider></ExperienceSlider>
           <div className="w-11/12 md:w-2/3">
@@ -103,16 +119,9 @@ export default function Main() {
             <p className="font-bold mt-4 mb-1">{t('work.achievements.title')}</p>
             <ul className="list-disc list-inside">
               <li className="text-pretty mb-2">{t('work.achievements.1')}</li>
-              <li className="text-pretty mb-2">
-                <span>{t('work.achievements.2')}</span>
-                <a href="https://affiliates.lulosaurio.com" target="_blank" className="underline decoration-solid">
-                  landing page
-                </a>
-                <span>{t('work.achievements.3')}</span>
-              </li>
+              <li className="text-pretty mb-2">{t('work.achievements.2')}</li>
+              <li className="text-pretty mb-2">{t('work.achievements.3')}</li>
               <li className="text-pretty mb-2">{t('work.achievements.4')}</li>
-              <li className="text-pretty mb-2">{t('work.achievements.5')}</li>
-              <li className="text-pretty mb-2">{t('work.achievements.6')}</li>
             </ul>
           </div>
         </div>

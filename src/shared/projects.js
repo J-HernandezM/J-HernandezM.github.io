@@ -1,10 +1,10 @@
 export const projects = [
     {
-        title: 'Ananda E-commerce',
+        title: 'Ananda E-commerce POC',
         description: 'cards.ananda',
         image: 'projects/ananda.png',
         repo: 'https://github.com/J-HernandezM/ananda-web',
-        live: 'https://anandajaboneria-web.vercel.app',
+        live: 'https://anandajaboneria.com',
         technologies: ['react', 'next', 'mui', 'sass', 'typescript', 'jest']
     },
     {
