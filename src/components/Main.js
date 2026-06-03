@@ -4,7 +4,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import profilePic from '/public/portafolio.png';
+import profilePic from '/public/portafolio.webp';
 import Image from 'next/image';
 import ProjectCard from './ProjectCard';
 import { projects } from '@/shared/projects';
@@ -65,7 +65,7 @@ export default function Main() {
       </section>
       <section id="about" className="flex flex-col items-center text-lg w-10/12 mx-auto lg:text-center gap-2 lg:gap-4">
         <div className="w-8/12 md:w-1/2 lg:w-4/12 aspect-square relative">
-          <Image src={profilePic} fill className="rounded-full" alt="profile picture of Juan Jose Hernandez"></Image>
+          <Image src={profilePic} className="mx-auto rounded-full absolute h-full w-auto inset-0 text-transparent" alt="profile picture of Juan Jose Hernandez" width={profilePic.width} height={profilePic.height}></Image>
         </div>
         <h2 className="text-3xl font-bold">{t('about')}</h2>
         <div className="lg:w-2/3">
@@ -76,22 +76,21 @@ export default function Main() {
         </div>
         <h2 className="text-3xl font-bold">{t('tech')}</h2>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 max-w-[740px]">
-          <img alt="Static Badge HTML" src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" />
-          <img alt="Static Badge CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" />
+          <img alt="Static Badge PYTHON" src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+          <img alt="Static Badge FASTAPI" src="https://img.shields.io/badge/FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+          <img alt="Static Badge NODE.JS" src="https://img.shields.io/badge/NODE.JS-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
+          <img alt="Static Badge EXPRESS.JS" src="https://img.shields.io/badge/EXPRESS.JS-404d59?style=for-the-badge&logo=express&logoColor=61DAFB" />
           <img alt="Static Badge" src="https://img.shields.io/badge/TYPESCRIPT-%233178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-          <img alt="Static Badge JAVASCRIPT" src="https://img.shields.io/badge/JAVASCRIPT-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+          <img alt="Static Badge AWS" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge" />
+          <img alt="Static Badge DOCKER" src="https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+          <img alt="Static Badge POSTGRESQL" src="https://img.shields.io/badge/POSTGRESQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+          <img alt="Static Badge" src="https://img.shields.io/badge/GITHUB%20ACTIONS-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
           <img alt="Static Badge REACT" src="https://img.shields.io/badge/REACT-20232a?style=for-the-badge&logo=REACT&logoColor=61DAFB" />
           <img alt="Static Badge ANGULAR" src="https://img.shields.io/badge/ANGULAR-black?style=for-the-badge&logo=angular&logoColor=white" />
           <img alt="Static Badge IONIC" src="https://img.shields.io/badge/IONIC-%233880FF?style=for-the-badge&logo=ionic&logoColor=white" />
-          <img alt="Static Badge NODE.JS" src="https://img.shields.io/badge/NODE.JS-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
-          <img alt="Static Badge EXORESS.JS" src="https://img.shields.io/badge/EXPRESS.JS-404d59?style=for-the-badge&logo=express&logoColor=61DAFB" />
-          <img alt="Static Badge" src="https://img.shields.io/badge/JEST-%23C21325?style=for-the-badge&logo=jest" />
-          <img alt="Static Badge VITE" src="https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-          <img alt="Static Badge NEXT" src="https://img.shields.io/badge/NEXT-black?style=for-the-badge&logo=next.js&logoColor=white" />
           <img alt="Static Badge TAILWIND" src="https://img.shields.io/badge/TAILWIND-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-          <img alt="Static Badge MATERIALUI" src="https://img.shields.io/badge/MUI-0081CB?style=for-the-badge&logo=MUI&logoColor=white" />
-          <img alt="Static Badge SASS" src="https://img.shields.io/badge/SASS-hotpink?style=for-the-badge&logo=SASS&logoColor=white" />
-          <img alt="Static Badge STYLED COMPONENTS" src="https://img.shields.io/badge/STYLED--COMPONENTS-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
+          <img alt="Static Badge" src="https://img.shields.io/badge/REDUX-764ABC?style=for-the-badge&logo=redux&logoColor=white" />
+          <img alt="Static Badge" src="https://img.shields.io/badge/JEST-%23C21325?style=for-the-badge&logo=jest" />
         </div>
       </section>
       <section id="experience" className="w-11/12 mx-auto flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8">
