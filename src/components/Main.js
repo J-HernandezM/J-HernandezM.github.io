@@ -29,7 +29,7 @@ export default function Main() {
           <Slide in={slide} container={containerRef.current} direction="up" {...(slide ? { timeout: 800 } : {})}>
             <div>
               <h1 className="gradient text-5xl lg:text-6xl font-semibold text-center">Juan José Hernández</h1>
-              <h2 className="text-3xl lg:text-4xl font-bold text-center">Frontend Developer</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-center">Software Engineer</h2>
             </div>
           </Slide>
         </div>

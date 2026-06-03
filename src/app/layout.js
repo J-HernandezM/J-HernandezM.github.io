@@ -8,7 +8,7 @@ const sourceCodePro = Source_Code_Pro({
 
 export const metadata = {
   title: 'Juan Jose Hernandez | Portafolio',
-  description: 'Frontend Developer',
+  description: 'Software Engineer',
 };
 
 export default function RootLayout({ children }) {
