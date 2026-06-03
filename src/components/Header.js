@@ -29,9 +29,6 @@ export default function Header() {
         <li className="hidden items-center md:flex">
           <a href="#work">03. {t('experience')}</a>
         </li>
-        <li className="hidden items-center md:flex">
-          <a href="#projects">04. {t('projects')}</a>
-        </li>
       </ul>
       <div className="flex items-center gap-4 ">
         <button onClick={changeLang} className="cursor-pointer text-xs md:text-sm w-7 h-7 hover:scale-110 transition-transform">

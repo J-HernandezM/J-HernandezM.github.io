@@ -6,8 +6,6 @@ import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import profilePic from '/public/portafolio.webp';
 import Image from 'next/image';
-import ProjectCard from './ProjectCard';
-import { projects } from '@/shared/projects';
 import { Slide } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -63,7 +61,7 @@ export default function Main() {
           </Slide>
         </div>
       </section>
-      <section id="about" className="flex flex-col items-center text-lg w-10/12 mx-auto lg:text-center gap-2 lg:gap-4">
+      <section id="about" className="flex flex-col items-center text-lg w-10/12 mx-auto lg:text-center gap-2 lg:gap-4 mb-12 lg:mb-20">
         <div className="w-8/12 md:w-1/2 lg:w-4/12 aspect-square relative">
           <Image src={profilePic} className="mx-auto rounded-full absolute h-full w-auto inset-0 text-transparent" alt="profile picture of Juan Jose Hernandez" width={profilePic.width} height={profilePic.height}></Image>
         </div>
@@ -93,9 +91,14 @@ export default function Main() {
           <img alt="Static Badge" src="https://img.shields.io/badge/JEST-%23C21325?style=for-the-badge&logo=jest" />
         </div>
       </section>
-      <section id="experience" className="w-11/12 mx-auto flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8">
-        <h2 className="text-3xl font-bold">{t('experience')}</h2>
-        <div className="w-full flex flex-col items-center lg:max-w-[1140px]">
+      <section id="experience" className="w-11/12 mx-auto flex flex-col items-center gap-2 lg:gap-4 mb-12 lg:mb-20">
+        <h2 className="text-3xl font-bold mb-4 lg:mb-8">{t('experience')}</h2>
+        <div className="w-full flex flex-col gap-8 items-center lg:flex-row lg:gap-14 lg:items-start lg:max-w-[1140px]">
+          <div className="hidden lg:block">
+            <div className="invisible">
+              <ExperienceSlider />
+            </div>
+          </div>
           <div className="w-11/12 md:w-2/3">
             <h3 className="text-xl font-bold">{t('work2.position')}</h3>
             <p>{t('work2.time')}</p>
@@ -111,7 +114,7 @@ export default function Main() {
             </ul>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-8 items-center lg:flex-row lg:gap-14 lg:items-start lg:max-w-[1140px]">
+        <div className="w-full flex flex-col gap-8 items-center lg:flex-row lg:gap-14 lg:items-start lg:max-w-[1140px] mt-8 lg:mt-12">
           <ExperienceSlider></ExperienceSlider>
           <div className="w-11/12 md:w-2/3">
             <h3 className="text-xl font-bold">{t('work.position')}</h3>
@@ -126,15 +129,7 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section id="projects" className="w-11/12 mx-auto flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8">
-        <h2 className="text-3xl font-bold">{t('projects')}</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {projects.map(project => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
-        </div>
-      </section>
-      <section id="contact" className="mb-20 flex flex-col items-center gap-2 lg:gap-4 mt-4 lg:mt-8 w-10/12 mx-auto">
+      <section id="contact" className="mb-20 flex flex-col items-center gap-2 lg:gap-4 w-10/12 mx-auto">
         <h2 className="text-3xl font-bold">{t('contact')}</h2>
         <p>
           {t('footer.1')}
