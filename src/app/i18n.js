@@ -46,7 +46,7 @@ i18next
               1: 'Engineered an autonomous testing agent using Model Context Protocol (MCP), enabling an LLM to dynamically execute and validate complex system logic directly against native backend code, completely eliminating live platform dependencies.',
               2: 'Architected agentic reporting workflows and LLM orchestration pipelines on AWS that cross-reference data across hundreds of migration documents to automatically generate status reports and actionable work items.',
               3: 'Designed an automated meeting intelligence pipeline for Zoom data, leveraging an LLM to autonomously produce structured reports and work items, reducing post-meeting admin overhead by 60%.',
-              4: 'Implemented Hexagonal Architecture alongside enterprise design patterns (Factory, Strategy, Repository) to cleanly decouple core business logic and AI layers from external infrastructure.',
+              4: 'Implemented Hexagonal Architecture alongside enterprise design patterns to cleanly decouple core business logic and AI layers from external infrastructure.',
               5: 'Developed high-throughput AWS ETL pipelines to ingest and unify millions of data records from fragmented client sources into a centralized database.',
               6: 'Lead a massive database deduplication strategy for historical and incoming real-time streaming data, ensuring strict data integrity and drastically slashing API query latency.',
               7: 'Integrated distributed observability and monitoring, configuring real-time alerting and custom metrics that significantly reduced Mean Time to Resolution (MTTR).',
