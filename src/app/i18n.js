@@ -48,7 +48,7 @@ i18next
               3: 'Designed an automated meeting intelligence pipeline for Zoom data, leveraging an LLM to autonomously produce structured reports and work items, reducing post-meeting admin overhead by 60%.',
               4: 'Implemented Hexagonal Architecture alongside enterprise design patterns (Factory, Strategy, Repository) to cleanly decouple core business logic and AI layers from external infrastructure.',
               5: 'Developed high-throughput AWS ETL pipelines to ingest and unify millions of data records from fragmented client sources into a centralized database.',
-              6: 'Spearheaded a massive database deduplication strategy for historical and incoming real-time streaming data, ensuring strict data integrity and drastically slashing API query latency.',
+              6: 'Lead a massive database deduplication strategy for historical and incoming real-time streaming data, ensuring strict data integrity and drastically slashing API query latency.',
               7: 'Integrated distributed observability and monitoring, configuring real-time alerting and custom metrics that significantly reduced Mean Time to Resolution (MTTR).',
             },
           },
