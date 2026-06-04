@@ -34,7 +34,7 @@ i18next
               title: 'ACHIEVEMENTS',
               1: 'Refactored a cross-platform mobile application (Ionic/Angular media player for kids) utilizing the Repository Pattern, optimizing state management and slashing production bundle size by 50%.',
               2: 'Architected full-stack web solutions including React + TypeScript platforms, headless CMS integrations for dynamic content delivery, and high-conversion marketing landing pages.',
-              3: 'Spearheaded Shopify e-commerce migrations and greenfield builds, successfully transferring thousands of product references from legacy providers while ensuring 100% data integrity.',
+              3: 'Lead Shopify e-commerce migrations and greenfield builds, successfully transferring thousands of product references from legacy providers while ensuring 100% data integrity.',
               4: 'Collaborated with UX/Design teams to translate high-fidelity designs into high-performance Shopify storefronts (Liquid, custom themes) engineered specifically to boost sales and retention.',
             },
           },
