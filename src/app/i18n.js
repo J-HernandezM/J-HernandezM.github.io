@@ -44,7 +44,7 @@ i18next
             achievements: {
               title: 'ACHIEVEMENTS',
               1: 'Engineered an autonomous testing agent using Model Context Protocol (MCP), enabling an LLM to dynamically execute and validate complex system logic directly against native backend code, completely eliminating live platform dependencies.',
-              2: 'Architected agentic reporting workflows and LLM orchestration pipelines on AWS that cross-reference data across hundreds of projects to automatically generate status reports and actionable work items.',
+              2: 'Architected agentic reporting workflows and LLM orchestration pipelines on AWS that cross-reference data across hundreds of migration documents to automatically generate status reports and actionable work items.',
               3: 'Designed an automated meeting intelligence pipeline for Zoom data, leveraging an LLM to autonomously produce structured reports and work items, reducing post-meeting admin overhead by 60%.',
               4: 'Implemented Hexagonal Architecture alongside enterprise design patterns (Factory, Strategy, Repository) to cleanly decouple core business logic and AI layers from external infrastructure.',
               5: 'Developed high-throughput AWS ETL pipelines to ingest and unify millions of data records from fragmented client sources into a centralized database.',
@@ -90,7 +90,7 @@ i18next
             achievements: {
               title: 'LOGROS OBTENIDOS',
               1: 'Diseñé e implementé un agente de pruebas autónomo utilizando Model Context Protocol (MCP), permitiendo que un LLM ejecute y valide lógica compleja del sistema directamente sobre el código nativo del backend, eliminando por completo la dependencia de entornos en vivo.',
-              2: 'Desarrolle workflows de reportes agénticos y pipelines de orquestación de LLMs en AWS que cruzan información de cientos de proyectos para generar reportes de estado y tareas accionables de forma automática.',
+              2: 'Desarrolle workflows de reportes agénticos y pipelines de orquestación de LLMs en AWS que cruzan información de cientos de documentos de migración para generar reportes de estado y tareas accionables de forma automática.',
               3: 'Diseñé un pipeline automatizado de inteligencia de reuniones para datos de Zoom, optimizando el uso de un LLM para producir autónomamente reportes estructurados y asignación de tareas, reduciendo la carga administrativa post-reunión en un 60%.',
               4: 'Implementé Arquitectura Hexagonal junto con patrones de diseño empresariales (Factory, Strategy, Repository) para desacoplar limpiamente la lógica de negocio central y las capas de IA de la infraestructura externa.',
               5: 'Desarrollé pipelines ETL de alto rendimiento en AWS para la ingesta y unificación de millones de registros de datos provenientes de fuentes fragmentadas de clientes en una base de datos centralizada.',
